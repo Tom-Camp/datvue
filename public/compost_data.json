@@ -1,0 +1,170 @@
+[
+  {
+    "air_temp": 63.68,
+    "humidity": 63.5,
+    "soil_temp": 64.445,
+    "moisture": 45.2,
+    "time": "2024-11-12 04:40:30"
+  },
+  {
+    "air_temp": 63.68,
+    "humidity": 63.4,
+    "soil_temp": 64.2518,
+    "moisture": 45.2,
+    "time": "2024-11-12 04:55:32"
+  },
+  {
+    "air_temp": 63.5,
+    "humidity": 63.3,
+    "soil_temp": 64.07,
+    "moisture": 45.2,
+    "time": "2024-11-12 05:10:34"
+  },
+  {
+    "air_temp": 63.32,
+    "humidity": 62.9,
+    "soil_temp": 64.2518,
+    "moisture": 45.2,
+    "time": "2024-11-12 05:25:37"
+  },
+  {
+    "air_temp": 66.2,
+    "humidity": 58.9,
+    "soil_temp": 65.7405,
+    "moisture": 45.1,
+    "time": "2024-11-12 05:40:40"
+  },
+  {
+    "air_temp": 65.3,
+    "humidity": 60.9,
+    "soil_temp": 65.3655,
+    "moisture": 45.2,
+    "time": "2024-11-12 05:55:43"
+  },
+  {
+    "air_temp": 64.22,
+    "humidity": 62.6,
+    "soil_temp": 64.82,
+    "moisture": 45.1,
+    "time": "2024-11-12 06:10:46"
+  },
+  {
+    "air_temp": 64.4,
+    "humidity": 62.5,
+    "soil_temp": 64.82,
+    "moisture": 45.1,
+    "time": "2024-11-12 06:25:49"
+  },
+  {
+    "air_temp": 64.04,
+    "humidity": 62.5,
+    "soil_temp": 64.6268,
+    "moisture": 45.1,
+    "time": "2024-11-12 06:40:52"
+  },
+  {
+    "air_temp": 64.04,
+    "humidity": 62.0,
+    "soil_temp": 64.445,
+    "moisture": 45.2,
+    "time": "2024-11-12 06:55:54"
+  },
+  {
+    "air_temp": 64.22,
+    "humidity": 62.0,
+    "soil_temp": 64.445,
+    "moisture": 45.1,
+    "time": "2024-11-12 07:10:57"
+  },
+  {
+    "air_temp": 64.4,
+    "humidity": 62.0,
+    "soil_temp": 64.82,
+    "moisture": 45.1,
+    "time": "2024-11-12 07:26:00"
+  },
+  {
+    "air_temp": 64.4,
+    "humidity": 61.3,
+    "soil_temp": 64.2518,
+    "moisture": 45.1,
+    "time": "2024-11-12 07:41:02"
+  },
+  {
+    "air_temp": 57.74,
+    "humidity": 60.0,
+    "soil_temp": 62.3994,
+    "moisture": 45.2,
+    "time": "2024-11-12 07:56:05"
+  },
+  {
+    "air_temp": 64.04,
+    "humidity": 58.4,
+    "soil_temp": 64.445,
+    "moisture": 45.1,
+    "time": "2024-11-12 08:11:08"
+  },
+  {
+    "air_temp": 63.86,
+    "humidity": 63.1,
+    "soil_temp": 65.0019,
+    "moisture": 45.0,
+    "time": "2024-11-12 08:26:11"
+  },
+  {
+    "air_temp": 64.04,
+    "humidity": 63.8,
+    "soil_temp": 64.82,
+    "moisture": 45.1,
+    "time": "2024-11-12 08:41:14"
+  },
+  {
+    "air_temp": 63.68,
+    "humidity": 63.0,
+    "soil_temp": 64.2518,
+    "moisture": 45.2,
+    "time": "2024-11-12 08:56:17"
+  },
+  {
+    "air_temp": 63.5,
+    "humidity": 62.5,
+    "soil_temp": 64.2518,
+    "moisture": 45.1,
+    "time": "2024-11-12 09:11:19"
+  },
+  {
+    "air_temp": 63.5,
+    "humidity": 62.1,
+    "soil_temp": 63.8882,
+    "moisture": 45.1,
+    "time": "2024-11-12 09:26:23"
+  },
+  {
+    "air_temp": 63.68,
+    "humidity": 61.8,
+    "soil_temp": 64.07,
+    "moisture": 45.2,
+    "time": "2024-11-12 09:41:25"
+  },
+  {
+    "air_temp": 63.86,
+    "humidity": 61.2,
+    "soil_temp": 63.8882,
+    "moisture": 45.1,
+    "time": "2024-11-12 09:56:27"
+  },
+  {
+    "air_temp": 63.68,
+    "humidity": 61.4,
+    "soil_temp": 63.8882,
+    "moisture": 45.1,
+    "time": "2024-11-12 10:11:30"
+  },
+  {
+    "air_temp": 63.86,
+    "humidity": 60.9,
+    "soil_temp": 64.07,
+    "moisture": 45.2,
+    "time": "2024-11-12 10:26:32"
+  }
+]
