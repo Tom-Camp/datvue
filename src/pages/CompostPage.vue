@@ -35,7 +35,8 @@ export default {
   methods: {
     async fetchData() {
       try {
-        const response = await axios.get(`http://localhost:8000/items/`);
+        const apiUrl = import.meta.env.VITE_API_URL
+        const response = await axios.get(`${apiUrl}/items/`);
         const { data } = response.data;
         this.chartData = data;
         console.log("loading data")
