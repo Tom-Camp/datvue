@@ -1,47 +1,44 @@
 <template>
   <div class="content">
     <div class="columns">
-      <ImageCard
+      <DataCard
         v-for="card in cards"
         :key="card.id"
-        :image-url="card.imageUrl"
-        :title="card.title"
-        :description="card.description"
-        :link="card.link"
+        :title="card.key"
+        :data="card.data"
       />
     </div>
   </div>
 </template>
 
 <script>
-import ImageCard from '../components/ImageCard.vue'
-import CoopImage from '@/assets/coop.png'
-import CompostImage from '@/assets/compost.png'
+import DataCard from '../components/DataCard.vue'
+import axios from "axios";
 
 export default {
   name: 'HomePage',
   components: {
-    ImageCard
+    DataCard
   },
   data() {
     return {
-      cards: [
-        {
-          id: 1,
-          imageUrl: CoopImage,
-          title: 'Coop',
-          description: 'Description for first card',
-          link: '/coop'
-        },
-        {
-          id: 2,
-          imageUrl: CompostImage,
-          title: 'Compost',
-          description: 'Description for second card',
-          link: '/compost'
-        }
-      ]
+      cards: []
     }
-  }
+  },
+  created() {
+    this.fetchData();
+  },
+  methods: {
+    async fetchData() {
+      try {
+        const response = await axios.get(`http://127.0.0.1:8000/items/latest/`);
+        this.cards = response.data
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      } finally {
+        this.isLoading = false;
+      }
+    },
+  },
 }
 </script>

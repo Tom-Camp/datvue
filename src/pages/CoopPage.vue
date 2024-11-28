@@ -36,10 +36,10 @@ export default {
     async fetchData() {
       try {
         const response = await axios.get(`http://127.0.0.1:8000/items/`);
-        const dataArray = response.data.map(item =>
-          JSON.parse(item.data.replace(/'/g, '"'))
+        this.chartData = response.data.map(item =>
+            JSON.parse(item.data.replace(/'/g, '"'))
         );
-        this.chartData = dataArray;
+        console.log(this.chartData);
         if (this.chartData.length > 0) {
           this.fields = Object.keys(this.chartData[0]).filter((key) => key !== 'time');
         }

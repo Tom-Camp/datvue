@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage.vue'
 import CoopPage from './pages/CoopPage.vue'
 import CompostPage from './pages/CompostPage.vue'
 import 'bulma/css/bulma.min.css'
+import '@fortawesome/fontawesome-free/css/all.css';
 
 const router = createRouter({
   history: createWebHistory(),
