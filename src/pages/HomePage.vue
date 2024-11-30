@@ -20,6 +20,48 @@ export default {
   components: {
     DataCard
   },
+    setup() {
+    const showModal = ref(false);
+    let chartInstance = null;
+
+    // Create the chart when modal opens
+    const createChart = () => {
+      const ctx = document.getElementById("chartCanvas").getContext("2d");
+      if (chartInstance) {
+        chartInstance.destroy(); // Destroy the chart if it already exists to prevent duplicates
+      }
+      chartInstance = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["January", "February", "March", "April", "May"],
+          datasets: [
+            {
+              label: "Sample Data",
+              data: [12, 19, 3, 5, 2],
+              backgroundColor: ["rgba(75, 192, 192, 0.2)"],
+              borderColor: ["rgba(75, 192, 192, 1)"],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+        },
+      });
+    };
+
+    // Watch the modal visibility and load the chart when opened
+    const closeModal = () => {
+      showModal.value = false;
+    };
+
+    return {
+      showModal,
+      createChart,
+      closeModal,
+    };
+  },
   data() {
     return {
       cards: []
@@ -38,6 +80,13 @@ export default {
         console.error('Error fetching data:', error);
       } finally {
         this.isLoading = false;
+      }
+    },
+  },
+  watch: {
+    showModal(newValue) {
+      if (newValue) {
+        this.createChart();
       }
     },
   },

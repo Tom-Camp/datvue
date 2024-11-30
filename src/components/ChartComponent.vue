@@ -3,6 +3,16 @@
   <div>
     <canvas ref="chartCanvas"></canvas>
   </div>
+      <!-- Modal -->
+  <div class="modal" :class="{ 'is-active': showModal }">
+    <div class="modal-background" @click="closeModal"></div>
+    <div class="modal-content">
+      <div class="box">
+        <canvas id="chartCanvas"></canvas>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close" @click="closeModal"></button>
+  </div>
 </template>
 
 <script>

@@ -16,6 +16,7 @@
       </div>
     </div>
     <footer class="card-footer">
+      <a href="#" class="card-footer-item" @click.prevent="showModal = true">View Data</a>
     </footer>
   </div>
 </template>

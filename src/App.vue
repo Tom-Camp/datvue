@@ -1,6 +1,8 @@
 <script>
+import HomePage from "@/pages/HomePage.vue";
 export default {
-  name: 'App'
+  name: 'App',
+  components: {HomePage}
 }
 </script>
 
@@ -8,7 +10,7 @@ export default {
   <div>
     <section class="section is-centered">
       <div class="container is-max-desktop">
-        <router-view></router-view>
+        <HomePage/>
       </div>
     </section>
   </div>
