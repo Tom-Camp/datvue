@@ -31,7 +31,7 @@ export default {
     async fetchData() {
       try {
         const apiUrl = import.meta.env.VITE_API_URL;
-        const response = await axios.get(`${apiUrl}/items/latest/COOP/`, {
+        const response = await axios.get(`${apiUrl}/items/latest/coop/`, {
           withCredentials: true,
         });
         this.card = response.data;
@@ -41,6 +41,13 @@ export default {
         this.isLoading = false;
       }
     }
+  },
+  mounted() {
+    this.fetchData();
+    this.intervalId = setInterval(this.fetchData, 300000);
+  },
+  beforeDestroy() {
+    clearInterval(this.intervalId);
   },
 }
 </script>
