@@ -8,4 +8,8 @@ html, body {
   padding: 0;
 }
 
+a {
+  color: var(--bulma-primary-dark);
+}
+
 /*# sourceMappingURL=styles.css.map */
