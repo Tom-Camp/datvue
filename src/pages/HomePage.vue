@@ -30,8 +30,8 @@ export default {
   methods: {
     async fetchData() {
       try {
-        const apiUrl = import.meta.env.VITE_API_URL;
-        const response = await axios.get(`${apiUrl}/items/latest/coop/`, {
+        const apiUrl = import.meta.env.VITE_API_HOME_URL;
+        const response = await axios.get(`${apiUrl}`, {
           withCredentials: true,
         });
         this.card = response.data;
