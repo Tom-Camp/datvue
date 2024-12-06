@@ -1,0 +1,15 @@
+body {
+  background-color: hsl(0deg, 0%, 95%);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--bulma-primary-dark);
+}
+
+/*# sourceMappingURL=styles.css.map */

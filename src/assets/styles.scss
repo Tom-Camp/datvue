@@ -1,0 +1,15 @@
+$background-color: hsl(0, 0%, 95%);
+
+body {
+  background-color: $background-color;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  color: var(--bulma-primary-dark);
+}

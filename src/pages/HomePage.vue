@@ -2,7 +2,6 @@
   <div class="content">
     <div class="columns">
       <DataCard
-        v-for="card in cards"
         :key="card.id"
         :title="card.key"
         :data="card.data"
@@ -22,7 +21,7 @@ export default {
   },
   data() {
     return {
-      cards: []
+      card: {}
     }
   },
   created() {
@@ -32,8 +31,8 @@ export default {
     async fetchData() {
       try {
         const apiUrl = import.meta.env.VITE_API_URL
-        const response = await axios.get(`${apiUrl}/items/latest/`);
-        this.cards = response.data
+        const response = await axios.get(`${apiUrl}/items/latest/coop`);
+        this.card = response.data
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
