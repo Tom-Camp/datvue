@@ -30,15 +30,17 @@ export default {
   methods: {
     async fetchData() {
       try {
-        const apiUrl = import.meta.env.VITE_API_URL
-        const response = await axios.get(`${apiUrl}/items/latest/COOP`);
-        this.card = response.data
+        const apiUrl = import.meta.env.VITE_API_URL;
+        const response = await axios.get(`${apiUrl}/items/latest/COOP`, {
+          withCredentials: true,
+        });
+        this.card = response.data;
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
         this.isLoading = false;
       }
-    },
+    }
   },
 }
 </script>
