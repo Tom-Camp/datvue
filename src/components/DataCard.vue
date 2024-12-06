@@ -10,7 +10,7 @@
       <div class="content">
         <ul>
           <li v-for="(value, key) in data" :key="key" class="is-size-4">
-            <b>{{ key }}:</b> {{ value }}
+            <b>{{ key }}:</b> {{ value }}<span>{{ getExtraValue(key) }}</span>
           </li>
         </ul>
       </div>
@@ -52,7 +52,6 @@ export default {
     const chartData = ref([]);
 
     const parseChartData = (responseData) => {
-      // Extract time-series data for each metric
       const metrics = ["pressure", "air_temp", "air_humidity"];
       const timeSeries = responseData.map((entry) => ({
         time: entry.data.time,
@@ -94,6 +93,19 @@ export default {
       openModal,
       closeModal,
     };
+  },
+  methods: {
+    getExtraValue(key) {
+      const extraValues = {
+        "pressure": " hPa",
+        "air_humidity": "%",
+        "humidity": "%",
+        "air_temp": "°F",
+        "temp": "°F",
+        "gas": " Ohms",
+      };
+      return extraValues[key] || "";
+    },
   },
 }
 </script>
